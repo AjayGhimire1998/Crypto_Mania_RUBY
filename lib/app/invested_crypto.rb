@@ -56,15 +56,6 @@ class InvestedCrypto
             invested_crypto.amount_invested = amount_invested.to_i
             invested_crypto.number_owned = (amount_invested.to_i / selection_name[0][0][2]).to_f.round(3)
 
-
-            # if player_new.balance.negative?
-            #     @@all.last.amount_invested -= player_new.balance.abs
-            #     puts pastel.cyan.bold("
-            #         Due to insufficient balance, you have only
-            #         invested #{@@all.last.amount_invested} in 
-            #         #{@@all.last.name.upcase}")
-            #     player_new.balance = 0
-            # end
             if_balance_negative?
         end    
     end

@@ -23,8 +23,6 @@ class CryptoMania
        InvestedCrypto.set_and_show_total_amount
        Player.all[0].total_balance_message
        win_message
-       p InvestedCrypto.all
-       p Player.all[0]
     end
 
 
